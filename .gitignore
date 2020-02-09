@@ -1,0 +1,17 @@
+.DS_Store
+
+
+# Editor directories and files
+__pycache__/
+*.py[cod]
+*$py.class
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+
+
