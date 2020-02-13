@@ -22,8 +22,8 @@ class UserProfile(AbstractUser):
     birthday = models.DateField(verbose_name="生日", null=True, blank=True)
     gender = models.CharField(verbose_name="性名", choices=GENDER_CHOICES, max_length=6)
     addres = models.CharField(max_length=100, verbose_name="地址", default="")
-    mobile = models.CharField(max_length=11, verbose_name="手机号", unique=True)
-    image = models.ImageField(upload_to="head_img/%Y/%m", default="head_img/default.jpg")
+    mobile = models.CharField(max_length=11, verbose_name="手机号")
+    image = models.ImageField(upload_to="head_img/%Y/%m", default="head_img/default.jpg", verbose_name="用户头像")
 
     class Meta:
         verbose_name = "用户信息"
